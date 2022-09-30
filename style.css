@@ -94,7 +94,7 @@
 /* -- Home -- */
 
 .home {
-    background-image: url('/images/bg-home.jpg');
+    background-image: url('images/bg-home.jpg');
     width: 100%;
     height: 800px;
     background-position: center;
@@ -107,7 +107,7 @@
 }
 
 .about .about-img {
-    background-image: url('/images/kitchen_chopping_vegetables.jpg');
+    background-image: url('images/kitchen_chopping_vegetables.jpg');
     /* width: 50%; */
     height: 50vh;
     background-size: cover;
