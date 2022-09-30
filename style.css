@@ -1,0 +1,198 @@
+/* Google Font */
+
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Oxygen', sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    /* Text Color */
+    --text-red: #ff0018;
+    --text-black: #000;
+    /* Buttons */
+    --btn-text-dark: #212529;
+    --btn-bg-dark: #212529;
+    --btn-bg-border-dark: #212529;
+    --btn-text-light: #fff;
+    --btn-bg-light: #fff;
+    --btn-bg-border-light: #FFF;
+    /* Background */
+    --bg-dark: #000;
+
+}
+
+
+/* ===== TYPOGRAPHY ====== */
+
+/* --- Font Family --- */
+.font-Oxygen {
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* --- Text Colors --- */
+.text-red {
+    color: var(--text-red);
+}
+
+.text-person {
+    color: #FA2FB5;
+}
+
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+
+/* ===== Buttons ====== */
+
+/* --- OUTLINES --- */
+
+/* -- Dark Outline --- */
+.btn-dark-outline {
+    color: var(--btn-text-light);
+    background-color: var(--btn-bg-dark);
+    border-color: var(--btn-bg-border-dark);
+}
+
+.btn-dark-outline:hover{
+    color: var(--btn-text-dark);
+    background-color: var(--btn-bg-light);
+    border-color: var(--btn-bg-border-dark);
+    transition: all 0.3s ease;
+}
+
+/* -- Light Outline --- */
+.btn-light-outline {
+    color: var(--btn-text-dark);
+    background-color: var(--btn-bg-light);
+    border-color: var(--btn-bg-border-light);
+}
+
+.btn-light-outline:hover{
+    color: var(--btn-text-light);
+    background-color: transparent;
+    border-color: var(--btn-bg-border-light);
+    transition: all 0.3s ease;
+}
+
+
+/* .nav-link:hover {
+    border-bottom: 2px solid green;
+    transition: all 0.2s ease-in;
+} */
+
+
+/* -- Home -- */
+
+.home {
+    background-image: url('/images/bg-home.jpg');
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head {
+    padding-top: 10em;
+}
+
+.about .about-img {
+    background-image: url('/images/kitchen_chopping_vegetables.jpg');
+    /* width: 50%; */
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    height: auto;
+}
+
+.menu ul {
+    justify-content: center;
+}
+
+.menu .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    /* color: #FFF; */
+    color: var(--text-black);
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+/* .menu .nav-link:hover {
+    color: #FFF;
+    font-weight: bold;
+} */
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    /* color: #000 !important; */
+    background-color: var(--bg-dark) !important;
+}
+
+.card img {
+    height: 250px;
+}
+
+
+/* Font Awesome Icon
+--------------------- */
+
+.fa-star {
+    /* color: rgb(255, 200, 62); */
+    color: rgb(255, 200, 62);
+}
+
+.fa-star-half-stroke {
+    color: rgb(255, 200, 62);
+}
+
+.fa-star.empty {
+    color:rgb(108, 106, 106)
+}
+
+
+/*---------- 
+    Footer 
+------------*/
+
+footer .stretched-link {
+    text-decoration: none;
+    color: rgb(108, 106, 106);
+}
+
+footer .stretched-link:hover{
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+    /* transition: all 0.3s ease-in; */
+}
+
+.social {
+    color: black;
+}
+
+.facebook:hover {
+    color: #4267B2;
+}
+.whatsapp:hover {
+    color: #075e54;
+}
+.facebook:hover {
+    color: #4267B2;
+}
+.youtube:hover {
+    color: #FF0000;
+}

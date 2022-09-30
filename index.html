@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homie Mom'S</title>
+
+  <!-- Bootstrap CSS & JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Required jQuery -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent" id="navbar_top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Homie Mom'S</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-3">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#">Reviews</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="btn btn-outline-light" href="#" role="button">Order Now</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section class="home">
+      <div class="container head">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1 class="text-light fw-bold display-1">Healthy Food Service</h1>
+            <p class="text-light display-6">Best quality with gorgeous portion.</p>
+            <h3 class="text-light"> Wholesome goodness is here...</h3>
+            <div>
+              <button class="btn btn-lg btn-light-outline me-1">Order Now</button>
+              <button class="btn btn-lg btn-outline-light">Pre-Booking</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 about-img rounded"></div>
+          <div class="col-lg-5 offset-lg-1 col-md-6 col-sm-12 mt-4">
+            <h1 class="fw-bolder mb-5">Homie Mom'S</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus beatae hic. Molestias
+              consequatur et minima nostrum. Voluptates ab quam alias voluptatum architecto doloribus commodi, quia
+              beatae
+              saepe tempora eaque, modi
+              impedit labore. Minima omnis temporibus itaque libero illo ipsa sapiente dolores facilis labore ipsam?</p>
+            <button class="btn btn-outline-dark">Check more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu mt-5 pb-5 bg-light" id="menu">
+      <h1 class="text-center fw-bold display-4 text-dark pt-5">Our Menu</h1>
+      <!-- Menu Navigation with their content -->
+      <ul class="nav nav-pills mt-5 mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fw-bold active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fw-bold" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Breakfast</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fw-bold" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Lunch</button>
+        </li>
+      </ul>
+      <div class="tab-content mb-5" id="pills-tabContent">
+        <!-- All Menu item show -->
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="container">
+            <h1 class="text-dark fw-bold text-center pt-3 pb-3">Most Popular</h1>
+
+            <div class=" mb-3">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/Beef-Biryani.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Beef Biryani</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 250.00</h5>
+                      </div>
+                      <p class="card-text">Basmati rice, beef, and some other elements. <span
+                          class="text-person fw-bold">One person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <span class="fw-bold font-Oxygen">4.5</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/Basa-fish-curry.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Basa fish curry</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 200.00</h5>
+                      </div>
+
+                      <p class="card-text">One plate rice with four or five pieces of fish. <span
+                          class="fw-bold text-person">One person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <span class="fw-bold font-Oxygen">4.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/Beef-Kala-Bhuna-Recipe.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Beef Kala Bhuna</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 800.00</h5>
+                      </div>
+                      <p class="card-text">Beef with dark soy sauce, green chili. <span class="fw-bold text-person">Six
+                          people</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="fw-bold font-Oxygen">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/Chicken Kala vuna Paratha.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Chicken Paratha</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 150.00</h5>
+                      </div>
+                      <p class="card-text">Some pieces of fried chicken with four paratha. <span
+                          class="fw-bold text-person">One person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="fw-bold font-Oxygen">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" mb-3">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/chicken-biryani-instant-pot.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Chicken Biryani</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 220.00</h5>
+                      </div>
+                      <p class="card-text">Basmati rice, half chicken, and some other elements. <span
+                          class="fw-bold text-person">Two person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="fw-bold font-Oxygen">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/Chicken-Rezala.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Chicken Rezala</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 150.00</h5>
+                      </div>
+                      <p class="card-text">Six chicken pieces with rezala in a pot. <span
+                          class="fw-bold text-person">Six person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="fw-bold font-Oxygen">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/chicken-tikka-.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Chicken Tikka</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 180.00</h5>
+                      </div>
+                      <p class="card-text">Eight pieces of chicken. <span class="fw-bold text-person">One person</span>
+                        only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="fw-bold font-Oxygen">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/chicken_biryani-potatoes.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Chicken Biryani<br>Potatoes</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 170.00</h5>
+                      </div>
+                      <p class="card-text">Normal rice, half chicken, potatoes and some other elements. <span
+                          class="fw-bold text-person">Two person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="fw-bold font-Oxygen">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="container"> -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/chickentikka.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title fw-bold">Chicken Tikka <br>Vegetable</h5>
+                      <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 120.00</h5>
+                    </div>
+                    <p class="card-text">Four pieces of chicken with vegetable. <span class="fw-bold text-person">One
+                        person</span> only.</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button href="#" class="btn btn-dark-outline">Order Now</button>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="fw-bold font-Oxygen">5.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/Chinese-chicken-fried-rice.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title fw-bold">Chicken Fried Rice</h5>
+                      <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 140.00</h5>
+                    </div>
+                    <p class="card-text">Normal rice, some pieces of chicken in a pot. <span
+                        class="fw-bold text-person">One person</span> only.</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button href="#" class="btn btn-dark-outline">Order Now</button>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class="fw-bold font-Oxygen">3.5</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/Chingri-Macher-Malaicurry.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title fw-bold">Macher Malaicurry</h5>
+                      <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 220.00</h5>
+                    </div>
+                    <p class="card-text">Four pieces of Chingri with rezala. <span class="fw-bold text-person">Two
+                        person</span> only.</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button href="#" class="btn btn-dark-outline">Order Now</button>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="fw-bold font-Oxygen">5.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/Crunchy Fried Chicken.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title fw-bold">Crunchy Fried Chicken</h5>
+                      <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 180.00</h5>
+                    </div>
+                    <p class="card-text">Six pieces of chicken. <span class="fw-bold text-person">Two person</span>
+                      only.</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button href="#" class="btn btn-dark-outline">Order Now</button>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="fw-bold font-Oxygen">5.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+        <!-- All menu item content end -->
+
+        <!-- BREAKFAST item content -->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="container">
+            <h1 class="text-dark fw-bold text-center pt-3 pb-3">Breakfast</h1>
+            <div class=" mb-3">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/Chicken Kala vuna Paratha.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Chicken Paratha</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 150.00</h5>
+                      </div>
+                      <p class="card-text">Some pieces of fried chicken with four paratha. <span
+                          class="fw-bold text-person">One person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="fw-bold font-Oxygen">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/bread-omelette-2-pis.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Bread omelet</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 70.00</h5>
+                      </div>
+                      <p class="card-text">Four pieces of bread omelet. <span class="fw-bold text-person">Two
+                          person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="fw-bold font-Oxygen">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/Simple-Boiled-Egg-Sandwich.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Boiled Egg Sandwich</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 80.00</h5>
+                      </div>
+                      <p class="card-text">Two pieces of sandwich with boiled egg. <span class="fw-bold text-person">One
+                          person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="fw-bold font-Oxygen">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/Egg-paratha-hero.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Egg Paratha</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 65.00</h5>
+                      </div>
+                      <p class="card-text">Three pieces of egg paratha. <span class="fw-bold text-person">One
+                          person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                          <span class="fw-bold font-Oxygen">4.5</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="container"> -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/Kolkata-Egg-Rolls-Recipe.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title fw-bold">Egg Rolls</h5>
+                      <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 45.00</h5>
+                    </div>
+                    <p class="card-text">Two pieces of egg rolls. <span class="fw-bold text-person">One person</span>
+                      only.</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button href="#" class="btn btn-dark-outline">Order Now</button>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class="fw-bold font-Oxygen">4.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/gobi-aloo-platejpg.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title fw-bold">Alu Ruti</h5>
+                      <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 30.00</h5>
+                    </div>
+                    <p class="card-text">Two pieces of bread with potato fries. <span class="fw-bold text-person">One
+                        person</span> only.</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button href="#" class="btn btn-dark-outline">Order Now</button>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class="fw-bold font-Oxygen">4.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/Garlic-Naan-1-3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title fw-bold">Garlic-Naan</h5>
+                      <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 60.00</h5>
+                    </div>
+                    <p class="card-text">Four pieces of garlic naan. <span class="fw-bold text-person">Two person</span>
+                      only.</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button href="#" class="btn btn-dark-outline">Order Now</button>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class="fw-bold font-Oxygen">4.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/Roti-Canai-.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title fw-bold">Paratha Canar Dal</h5>
+                      <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 80.00</h5>
+                    </div>
+                    <p class="card-text">Three pieces of paratha with canar dal. <span class="fw-bold text-person">One
+                        person</span> only.</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button href="#" class="btn btn-dark-outline">Order Now</button>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="fw-bold font-Oxygen">5.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="container">
+            <h1 class="text-dark fw-bold text-center pt-3 pb-3">Lunch</h1>
+            <div class=" mb-3">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/Rui-spicy-fish-fry-.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Rui Spicy Fry</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 60.00</h5>
+                      </div>
+                      <p class="card-text">Two pieces of rui spicy fish fry. <span class="fw-bold text-person">One
+                          person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="fw-bold font-Oxygen">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/fish-biryani-machhali-biryani.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Fish Biryani</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 160.00</h5>
+                      </div>
+                      <p class="card-text">Four pieces of fish biryani. <span class="fw-bold text-person">One
+                          person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="fw-bold font-Oxygen">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/Simple-Boiled-Egg-Sandwich.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Boiled Egg Sandwich</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 80.00</h5>
+                      </div>
+                      <p class="card-text">Two pieces of sandwich with boiled egg. <span class="fw-bold text-person">One
+                          person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <span class="fw-bold font-Oxygen">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/Egg-paratha-hero.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title fw-bold">Egg Paratha</h5>
+                        <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 65.00</h5>
+                      </div>
+                      <p class="card-text">Three pieces of egg paratha. <span class="fw-bold text-person">One
+                          person</span> only.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button href="#" class="btn btn-dark-outline">Order Now</button>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                          <span class="fw-bold font-Oxygen">4.5</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="container"> -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/Kolkata-Egg-Rolls-Recipe.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title fw-bold">Egg Rolls</h5>
+                      <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 45.00</h5>
+                    </div>
+                    <p class="card-text">Two pieces of egg rolls. <span class="fw-bold text-person">One person</span>
+                      only.</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button href="#" class="btn btn-dark-outline">Order Now</button>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class="fw-bold font-Oxygen">4.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/gobi-aloo-platejpg.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title fw-bold">Alu Ruti</h5>
+                      <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 30.00</h5>
+                    </div>
+                    <p class="card-text">Two pieces of bread with potato fries. <span class="fw-bold text-person">One
+                        person</span> only.</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button href="#" class="btn btn-dark-outline">Order Now</button>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class="fw-bold font-Oxygen">4.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/Garlic-Naan-1-3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title fw-bold">Garlic-Naan</h5>
+                      <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 60.00</h5>
+                    </div>
+                    <p class="card-text">Four pieces of garlic naan. <span class="fw-bold text-person">Two person</span>
+                      only.</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button href="#" class="btn btn-dark-outline">Order Now</button>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class="fw-bold font-Oxygen">4.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/images/Roti-Canai-.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title fw-bold">Paratha Canar Dal</h5>
+                      <h5 class="card-title fw-bold text-red font-Oxygen">Tk. 80.00</h5>
+                    </div>
+                    <p class="card-text">Three pieces of paratha with canar dal. <span class="fw-bold text-person">One
+                        person</span> only.</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button href="#" class="btn btn-dark-outline">Order Now</button>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class="fw-bold font-Oxygen">5.0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class=" mt-5">
+    <div class="container">
+      <div class="pt-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col">
+            <h5 class="text-uppercase fw-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class=""><a href="#" class="text-uppercase stretched-link">Home</a></li>
+              <li class=""><a href="#menu" class="text-uppercase stretched-link">Menu</a></li>
+              <li class=""><a href="#" class="text-uppercase stretched-link">Reviews</a></li>
+              <li class=""><a href="#" class="text-uppercase stretched-link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5 class="text-uppercase fw-bold">Booking Hours</h5>
+            <ul class="list-unstyled list-group-flush">
+              <li class="list-group-item ps-0">Saturday -<span class="text-red"> Closed</span></li>
+              <li class="list-group-item ps-0">Sunday |<span class="font-Oxygen"> 07 : 00 am - 05 : 00 pm</span></li>
+              <li class="list-group-item ps-0">Monday |<span class="font-Oxygen"> 07 : 00 am - 05 : 00 pm</span></li>
+              <li class="list-group-item ps-0">Wednesday |<span class="font-Oxygen"> 07 : 00 am - 05 : 00 pm</span></li>
+              <li class="list-group-item ps-0">Thursday |<span class="font-Oxygen"> 07 : 00 am - 05 : 00 pm</span></li>
+              <li class="list-group-item ps-0">Friday |<span class="font-Oxygen"> 06 : 30 am - 05 : 00 pm</span></li>
+
+            </ul>
+          </div>
+          <div class="col">
+            <h5 class="text-uppercase fw-bold">Address</h5>
+            <p class=""><i class="fa-solid fa-location-dot"></i> Mirpur, Dhaka,<br>Bangladesh.</p>
+
+            <h6 class=" fw-bold pb-0">Contacts</h6>
+            <ul class="list-unstyled">
+              <li class=""><i class="fa-solid fa-envelope"></i> <a href="#"
+                  class="stretched-link">homie.moms2019@gmail.com</a></li>
+              <li class=""><i class="fa-solid fa-phone"></i> <a href="#" class="font-Oxygen stretched-link">+880 000
+                  0000 001</a></li>
+              <li class=""><i class="fa-brands fa-whatsapp"></i> <a href="#" class="font-Oxygen stretched-link">+880 000
+                  0000 002</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5 class="text-uppercase fw-bold">Follow Us</h5>
+            <div class="d-flex">
+              <a href="#" class="social facebook"><i class="fa-brands fa-facebook-f fa- me-3"></i></a>
+              <a href="#" class="social whatsapp"><i class="fa-brands fa-whatsapp fa- me-3"></i></a>
+              <a href="#" class="social instagram"><i class="fa-brands fa-instagram fa- me-3"></i></a>
+              <a href="#" class="social youtube"><i class="fa-brands fa-youtube fa-"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-dark pt-2 pb-2 mt-2">
+      <p class="mb-0 text-light text-center"><span class="font-Oxygen">2021</span> - Injamul Alam</p>
+    </div>
+  </footer>
+
+  <!-- Required JavaScript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
