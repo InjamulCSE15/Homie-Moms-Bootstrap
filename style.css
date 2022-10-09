@@ -145,7 +145,9 @@
 .card img {
     height: 250px;
 }
-
+.card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2)
+} 
 
 /* Font Awesome Icon
 --------------------- */
@@ -161,6 +163,19 @@
 
 .fa-star.empty {
     color:rgb(108, 106, 106)
+}
+
+
+/*----------
+Contact Form
+------------*/
+#floatingTextarea2 {
+    height: 200px;
+}
+
+#send:hover {
+    padding-left: 1.5em;
+    padding-right: 2em;
 }
 
 
